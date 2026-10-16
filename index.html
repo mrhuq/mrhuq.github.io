@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Mohammad Rezwanul Huq</title>
+<meta name="description" content="Professor, Department of Computer Science and Engineering, East West University, Dhaka. Research on data provenance, machine learning and big data analytics.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr. Mohammad Rezwanul Huq">
+<meta property="og:description" content="Professor of Computer Science and Engineering, East West University. Data provenance, machine learning, big data analytics.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1a1a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='white'%3EMH%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammad Rezwanul Huq",
+  "honorificPrefix": "Dr.",
+  "jobTitle": "Professor",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "East West University" },
+  "email": "mailto:mrhuq@ewubd.edu",
+  "sameAs": ["https://scholar.google.com/citations?user=TGYupX0AAAAJ&hl=en"],
+  "knowsAbout": ["Data provenance", "Machine learning", "Big data analytics", "Outcome-based education"]
+}
+</script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e6e6e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111111; --text: #e8e8e8; --muted: #9a9a9a; --line: #2a2a2a; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  a { color: var(--text); text-decoration: underline; text-decoration-color: var(--muted); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--text); }
+
+  header { padding: 72px 0 40px; }
+  .hero { display: flex; align-items: center; gap: 32px; }
+  .hero img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--line); }
+  @media (max-width: 600px) {
+    .hero { flex-direction: column; align-items: flex-start; gap: 20px; }
+    .hero img { width: 112px; height: 112px; }
+  }
+  h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; margin: 0 0 8px; }
+  .role { color: var(--muted); margin: 0; }
+  .links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 0.95rem; }
+
+  nav { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 5; }
+  nav .wrap { display: flex; gap: 20px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; font-size: 0.9rem; white-space: nowrap; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--text); }
+
+  section { padding: 44px 0 4px; }
+  h2 { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin: 0 0 20px; }
+  h3 { font-size: 1rem; font-weight: 600; margin: 28px 0 10px; }
+  p { margin: 0 0 14px; }
+
+  .item { display: grid; grid-template-columns: 150px 1fr; gap: 4px 24px; margin-bottom: 20px; }
+  .item .when { color: var(--muted); font-size: 0.9rem; }
+  .item .what strong { font-weight: 600; }
+  .item .what span { display: block; color: var(--muted); font-size: 0.95rem; }
+  .item .what p { margin: 6px 0 0; font-size: 0.95rem; }
+  @media (max-width: 600px) { .item { grid-template-columns: 1fr; } }
+
+  ul { padding-left: 1.1em; margin: 0 0 14px; }
+  li { margin-bottom: 8px; }
+  ul.plain { list-style: none; padding: 0; }
+  ul.plain li { padding-left: 0; }
+
+  ol.pubs { padding-left: 1.6em; margin: 0 0 14px; font-size: 0.93rem; line-height: 1.55; }
+  ol.pubs li { margin-bottom: 10px; padding-left: 4px; }
+  ol.pubs li::marker { color: var(--muted); }
+  .venue { color: var(--muted); }
+
+  details { margin-top: 10px; }
+  summary { cursor: pointer; color: var(--muted); font-size: 0.93rem; margin-bottom: 14px; }
+  summary:hover { color: var(--text); }
+
+  .small { font-size: 0.93rem; }
+
+  .skip { position: absolute; left: -9999px; top: 8px; background: var(--text); color: var(--bg); padding: 8px 14px; border-radius: 4px; z-index: 10; }
+  .skip:focus { left: 12px; }
+  a:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; border-radius: 2px; }
+
+  nav a.active { color: var(--text); }
+
+  .facts { display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 32px 0 0; }
+  .facts div { display: flex; flex-direction: column; }
+  .facts strong { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
+  .facts span { color: var(--muted); font-size: 0.85rem; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 4px 0 14px; }
+  .chips li { margin: 0; padding: 3px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.85rem; color: var(--muted); }
+
+  .search { width: 100%; max-width: 360px; padding: 9px 12px; font: inherit; font-size: 0.93rem; color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 6px; }
+  .search::placeholder { color: var(--muted); }
+  #pubnote { margin-left: 12px; color: var(--muted); font-size: 0.85rem; }
+
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--muted); }
+
+  @media print {
+    nav, .search, #pubnote, .skip { display: none; }
+    header { padding: 0 0 16px; }
+    section { padding-top: 24px; }
+    a { text-decoration: none; }
+    body { font-size: 11pt; }
+  }
+  footer { margin-top: 64px; padding: 24px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<header>
+  <div class="wrap hero">
+    <img src="photo.jpg" alt="Dr. Mohammad Rezwanul Huq" width="140" height="140">
+    <div>
+      <h1>Dr. Mohammad Rezwanul Huq</h1>
+      <p class="role">Professor, Department of Computer Science and Engineering<br>East West University, Dhaka, Bangladesh</p>
+      <div class="links">
+        <a href="mailto:mrhuq@ewubd.edu">mrhuq@ewubd.edu</a>
+        <a href="mailto:md.rezwan.huq@gmail.com">md.rezwan.huq@gmail.com</a>
+        <a href="http://www.ewubd.edu/~mrhuq/">University page</a>
+        <a href="https://scholar.google.com/citations?user=TGYupX0AAAAJ&hl=en">Google Scholar</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#service">Service</a>
+    <a href="#awards">Awards</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<div class="facts" aria-label="At a glance">
+  <div><strong>20+</strong><span>years in academia</span></div>
+  <div><strong>50+</strong><span>papers published</span></div>
+  <div><strong>2023</strong><span>BAETE evaluator since</span></div>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I have more than 20 years of academic experience at undergraduate and postgraduate levels, teaching Database Systems, Software Engineering, AI/ML and Data Analytics, and supervising many theses and capstone projects. I have taught at East West University, the Islamic University of Technology and Macquarie University.</p>
+  <p>My research focuses on data provenance, machine learning and big data analytics, with recent work on graph indexing, ML datasets and Bangla language processing. I hold a Ph.D. from the University of Twente and was a postdoctoral researcher at Macquarie University.</p>
+  <p>I am an expert in Outcome-Based Education (OBE) and have contributed to curriculum design, CQI processes and program outcome mapping aligned with BAETE and Washington Accord standards. I have served as an accreditation evaluator for BAETE since 2023 and have been involved in developing the M.Sc. and B.Sc. curricula in AI and Machine Learning at EWU.</p>
+  <ul class="chips" aria-label="Interests">
+    <li>Data provenance</li>
+    <li>Machine learning</li>
+    <li>Big data analytics</li>
+    <li>Graph indexing</li>
+    <li>Bangla language processing</li>
+    <li>Outcome-based education</li>
+  </ul>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="item">
+    <div class="when">Sep 2026 – present</div>
+    <div class="what"><strong>Professor, Dept. of CSE</strong><span>East West University</span>
+    <p>Undergraduate and graduate teaching, Bachelor and Master thesis supervision, and departmental and university committee work.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">Oct 2020 – Aug 2026</div>
+    <div class="what"><strong>Associate Professor, Dept. of CSE</strong><span>East West University</span>
+    <p>Undergraduate and graduate teaching, Bachelor and Master thesis supervision, and departmental and university committee work.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">Sep 2018 – present</div>
+    <div class="what"><strong>Assistant Director, Executive Development Center</strong><span>East West University</span>
+    <p>Supervising administration of EDC-SEIP, a government-funded skills development project under the Skills for Employment Investment Program (SEIP), Ministry of Finance, Government of Bangladesh.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">Jan 2018 – Oct 2020</div>
+    <div class="what"><strong>Assistant Professor, Dept. of CSE</strong><span>East West University</span></div>
+  </div>
+
+  <div class="item">
+    <div class="when">May 2017 – Jan 2018</div>
+    <div class="what"><strong>Postdoctoral Researcher</strong><span>Macquarie University, Sydney, Australia (EWU study leave)</span>
+    <p>Independent research on data provenance and trustworthiness under Dr. Yan Wang.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">Sep 2014 – May 2017</div>
+    <div class="what"><strong>Assistant Professor, Dept. of CSE</strong><span>East West University</span></div>
+  </div>
+
+  <div class="item">
+    <div class="when">Feb 2009 – Sep 2014</div>
+    <div class="what"><strong>Assistant Professor, Dept. of CSE</strong><span>Islamic University of Technology (IUT), Bangladesh</span>
+    <p>Taught undergraduate and graduate courses, supervised Bachelor theses and co-supervised a Master thesis. Moderator of IUT Computer Society (2014). Study leave for Ph.D., 2009–2013.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">Dec 2004 – Jan 2009</div>
+    <div class="what"><strong>Lecturer, Dept. of CSE</strong><span>Islamic University of Technology (IUT), Bangladesh</span>
+    <p>Taught undergraduate courses and supervised Bachelor theses. Moderator of IUT Computer Society (2008–2009). Study leave for M.Sc., 2006–2007.</p></div>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2>Teaching and supervision</h2>
+  <ul>
+    <li><strong>Courses:</strong> Database Systems, Software Engineering, Artificial Intelligence and Machine Learning, and Data Analytics at undergraduate and graduate levels.</li>
+    <li><strong>Supervision:</strong> Bachelor and Master theses and capstone projects, many of which have led to peer-reviewed publications with students.</li>
+    <li><strong>Curriculum:</strong> Involved in developing the M.Sc. in Artificial Intelligence and Machine Learning at EWU, and currently working on the B.Sc. in AI and ML curriculum. Active in OBE implementation, CQI processes and program outcome mapping.</li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="item">
+    <div class="when">2009 – 2013</div>
+    <div class="what"><strong>Ph.D., University of Twente, The Netherlands</strong>
+    <p><em>An Inference-based Framework for Managing Data Provenance.</em> A framework to infer accurate data provenance at reduced storage cost for data-intensive applications. Advisors: Prof. Dr. Peter Apers and Dr. Andreas Wombacher. <a href="https://doi.org/10.3990/1.9789036501781">DOI</a></p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">2006 – 2008</div>
+    <div class="what"><strong>M.Sc. in Computer Engineering, Kyung Hee University, South Korea</strong>
+    <p><em>File Sharing and Adaptation Framework in Advanced Collaborating Environment.</em> Advisor: Prof. Dr. Young-Koo Lee. CGPA 4.21 / 4.3.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">2001 – 2004</div>
+    <div class="what"><strong>B.Sc. in Computer Science &amp; IT, Islamic University of Technology, Bangladesh</strong>
+    <p><em>Design and Development of Software Level (loosely coupled) Ubiquitous Computing Grid.</em> Advisor: Prof. Dr. M. A. Mottalib. CGPA 4.87 / 5.0.</p></div>
+  </div>
+
+  <div class="item">
+    <div class="when">1998 – 2000</div>
+    <div class="what"><strong>SSC and HSC, Barishal Cadet College</strong>
+    <p>1st position in the combined merit list (HSC, 2000) and 3rd position (SSC, 1998), Jessore Board.</p></div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p class="small">A complete and up-to-date list is on <a href="https://scholar.google.com/citations?user=TGYupX0AAAAJ&hl=en">Google Scholar</a>.</p>
+  <p><input id="pubsearch" class="search" type="search" placeholder="Search publications by title, author, venue or year" aria-label="Search publications"><span id="pubnote" role="status"></span></p>
+
+  <h3>Journal papers</h3>
+  <ol class="pubs" reversed>
+    <li>M.R. Huq, M.N. Isty, R. Gani, T. Islam, J. Ahmed. Integrating Machine Learning and Explainable AI for Decision Support in Supply Chain Management. <span class="venue">Journal of Engineering, 2026.</span> <a href="https://doi.org/10.1155/je/4839375">DOI</a></li>
+    <li>M.R. Huq, S.M.Z. Rahaman. A Comprehensive Study of Distributed Transaction Handling in Microservices-Based Financial Applications. <span class="venue">IJERT, Vol. 15, Issue 2, 2026.</span> <a href="https://doi.org/10.5281/zenodo.18848561">DOI</a></li>
+    <li>M.R. Huq, J. Ahmed, R. Gani, M.N. Isty, T. Islam. Comprehensive smartphone image dataset for Aegle Marmelos, Hog plum, and lemon plant leaf disease and freshness assessment. <span class="venue">Data in Brief, Vol. 60, 2025.</span> <a href="https://doi.org/10.1016/j.dib.2025.111590">DOI</a></li>
+    <li>M.K. Rasel, M.R. Huq, M. Arifuzzaman. GraphIdx: An efficient indexing technique for accelerating graph data mining. <span class="venue">Software Impacts, Vol. 20, 2024.</span> <a href="https://doi.org/10.1016/j.simpa.2024.100632">DOI</a></li>
+    <li>N. Roy, R. Ahmed, M.R. Huq, M.M. Shahriar. User-centric Activity Recognition and Prediction Model using Machine Learning Algorithms. <span class="venue">IJACSA, Vol. 12, No. 12, 2021.</span> <a href="https://doi.org/10.14569/IJACSA.2021.0121265">DOI</a></li>
+    <li>K.A. Mohite, M.R. Huq. An Approach Of Urban Expansion Prediction using SVM And VAR. <span class="venue">IJSTR, Vol. 9, No. 4, 2020.</span></li>
+    <li>S. Banik, M.R. Huq. Geolocation Based Decision Making For Appropriate Land Use using Machine Learning Model. <span class="venue">IJSTR, Vol. 9, No. 2, 2020.</span></li>
+    <li>R. Sharmin, S.K. Rahut, M.R. Huq. Bengali Spoken Digit Classification: A Deep Learning Approach using Convolutional Neural Network. <span class="venue">Procedia Computer Science, Vol. 171, 2020.</span> <a href="https://doi.org/10.1016/j.procs.2020.04.148">DOI</a></li>
+    <li>A. Imtiaz, M.R. Huq. Intra-Network Web Cache Sharing to Reduce Web Traffic. <span class="venue">University of South Asia Journal, Vol. 4, No. 1, 2018.</span></li>
+    <li>M.R. Huq, A. Ali, A. Rahman. Sentiment Analysis on Twitter Data using KNN and SVM. <span class="venue">IJACSA, Vol. 8, No. 6, 2017.</span> <a href="https://doi.org/10.14569/IJACSA.2017.080603">DOI</a></li>
+    <li>M.R. Huq, A.A. Mosharraf, K. Rahman. Data Analysis and Phase Detection during Natural Disaster based on Social Data. <span class="venue">IJCSA, Vol. 7, No. 3, 2017.</span> <a href="https://doi.org/10.5121/ijcsa.2017.7301">DOI</a></li>
+    <li>M.R. Huq, P.M.G. Apers, A. Wombacher. An Inference-based Framework to Manage Data Provenance in Geoscience Applications. <span class="venue">IEEE Transactions on Geoscience and Remote Sensing, Vol. 51, No. 11, 2013.</span> <a href="https://doi.org/10.1109/TGRS.2013.2247769">DOI</a></li>
+    <li>R. Rahman, T.K. Avi, A.A. Khan, M.R. Huq. Implementation of Intelligent File Sharing in Advanced Collaborating Environment with Data Adaptation and Cache Optimization Service. <span class="venue">Journal of Engineering and Technology, Vol. 8, No. 2, 2010.</span></li>
+    <li>S.M. Faisal, M.R. Huq, A.S.M. Ashique Mahmood. Context Repository Architecture for Smart Collaborative Environment. <span class="venue">IJCSNS, Vol. 8, No. 12, 2008.</span></li>
+    <li>M.R. Huq, A.A. Khan, R. Rahman, T.K. Avi. Introducing Secured Node Registration and Supervised P2P File Sharing in Advanced Collaborating Environment. <span class="venue">IJCSNS, Vol. 8, No. 9, 2008.</span></li>
+  </ol>
+
+  <h3>Conference papers</h3>
+  <ol class="pubs" reversed>
+    <li>M.R. Huq, T.H. Mazumdar, M. Sarkar. Efficient Text-to-Image Retrieval Using CLIP Embeddings: A Comparative Study of FAISS Indexes. <span class="venue">IEEE QPAIN 2026, Chittagong.</span> <a href="https://doi.org/10.1109/QPAIN69676.2026.11546466">DOI</a></li>
+    <li>S. Hossen, A. Das, M.R. Hasan, M.R. Huq. Fast, Fault-Tolerant, and Affordable: A Modern Data Lakehouse ETL Pipeline for Emerging Economies. <span class="venue">IEEE ICCIT 2025, Cox's Bazar.</span> <a href="https://doi.org/10.1109/ICCIT68739.2025.11491349">DOI</a></li>
+    <li>T.A. Chowdhury, M.R. Huq. An Optimized Bangla Speech Emotion Recognition System Leveraging CNN-LSTM and Boosting Classifiers. <span class="venue">IEEE ICDS 2024, Marrakech.</span> <a href="https://doi.org/10.1109/ICDS62089.2024.10756428">DOI</a></li>
+    <li>M.J. Hossain, S.S. Zaman, F.R. Akash, M.R. Sarker, M.R. Huq. Developing a Bangla Handwritten Text Recognition Framework using Deep Learning. <span class="venue">IEEE ICCIT 2023, Cox's Bazar.</span> <a href="https://doi.org/10.1109/ICCIT60459.2023.10441107">DOI</a></li>
+    <li>S. Yeasmin, N. Afrin, M.R. Huq. Transformer-Based Text Clustering for Newspaper Articles. <span class="venue">MIET 2022, LNICST vol. 490, Springer.</span> <a href="https://doi.org/10.1007/978-3-031-34619-4_35">DOI</a></li>
+    <li>S. Yeasmin, N. Afrin, K. Saif, M.R. Huq. Development of a Text Classification Framework using Transformer-based Embeddings. <span class="venue">DATA 2022, SciTePress.</span> <a href="https://doi.org/10.5220/0011268000003269">DOI</a></li>
+    <li>M. Majumder, A. Tabassum, J. Mousumi, M.R. Huq. Machine Learning based Approach on Predicting Suicidal Ideation. <span class="venue">ICT4SD 2020, LNNS vol. 154, Springer.</span> <a href="https://doi.org/10.1007/978-981-15-8354-4_64">DOI</a></li>
+    <li>S. Masud, M. Rana, F.R. Zahir, M.R. Huq. Detection of Antisocial Personality based on Social Media Data. <span class="venue">ICT4SD 2020, LNNS vol. 154, Springer.</span> <a href="https://doi.org/10.1007/978-981-15-8354-4_65">DOI</a></li>
+    <li>M.R. Huq, M.M. Rahman, T.B. Anny. Developing a User-Friendly Tool for Executing SQL Queries Using Hadoop Framework. <span class="venue">ICETIT 2019, LNEE vol. 605, Springer.</span> <a href="https://doi.org/10.1007/978-3-030-30577-2_76">DOI</a></li>
+    <li>M.A. Hasan, N. Hassan, M. Hasibuzzaman, M.R. Huq. A Scalable Approach for Improving Implementation of a Frequent Pattern Mining Algorithm using MapReduce Programming. <span class="venue">IEEE ICSITech 2019, Yogyakarta.</span> <a href="https://doi.org/10.1109/ICSITech46713.2019.8987446">DOI</a></li>
+    <li>A. Tabassum, A.I. Nady, M.R. Huq. Mathematical Formulation and Implementation of Query Inversion Techniques in RDBMS for Tracking Data Provenance. <span class="venue">IEEE ICoICT 2019, Kuala Lumpur.</span> <a href="https://doi.org/10.1109/ICoICT.2019.8835290">DOI</a></li>
+    <li>Abdullah-All-Tanvir, E.M. Mahir, S. Akhter, M.R. Huq. Detecting Fake News using Machine Learning and Deep Learning Algorithms. <span class="venue">IEEE ICSCC 2019, Sarawak.</span> <a href="https://doi.org/10.1109/ICSCC.2019.8843612">DOI</a></li>
+    <li>A. Mahbub, F. Haque, H. Bashar, M.R. Huq. Improved Piecewise Constant Approximation Method for Compressing Data Streams. <span class="venue">IEEE ICASERT 2019, Dhaka.</span> <a href="https://doi.org/10.1109/ICASERT.2019.8934460">DOI</a></li>
+    <li>A. Muttakin, M.R. Huq. Motif Discovery in Unaligned DNA Sequences using Genetic Algorithm. <span class="venue">IEEE ICAEE 2017, Dhaka.</span> <a href="https://doi.org/10.1109/ICAEE.2017.8255450">DOI</a></li>
+    <li>M.Z. Hasan, M.R. Huq. Transforming a Multi-value Database System into a Relational Database System for Faster Querying. <span class="venue">IEEE iCEEiCT 2016, Dhaka.</span> <a href="https://doi.org/10.1109/CEEICT.2016.7873072">DOI</a></li>
+    <li>A.I. Matin, S. Jahan, M.R. Huq. Community Recommendation in Social Network using Strong Friends and Quasi-clique Approach. <span class="venue">IEEE ICECE 2014, Dhaka.</span> <a href="https://doi.org/10.1109/ICECE.2014.7026937">DOI</a></li>
+    <li>M.R. Huq, P.M.G. Apers, A. Wombacher. ProvenanceCurious: A Tool to Infer Data Provenance from Scripts. <span class="venue">EDBT 2013, Genoa.</span> <a href="https://doi.org/10.1145/2452376.2452475">DOI</a></li>
+    <li>A. Wombacher, M.R. Huq. Towards Automatic Capturing of Manual Data Processing Provenance. <span class="venue">Data-Driven Process Discovery and Analysis, LNBIP vol. 162, Springer, 2013.</span> <a href="https://doi.org/10.1007/978-3-642-40919-6_5">DOI</a></li>
+  </ol>
+
+  <details>
+    <summary>Earlier conference papers (2003 – 2012)</summary>
+    <ol class="pubs" reversed>
+      <li>A. Wombacher, M.R. Huq, Y. Wada, R. van Beek. Data Provenance as a Tool for Debugging Hydrological Models based on Python. <span class="venue">AGU Fall Meeting, 2012.</span></li>
+      <li>M.R. Huq, P.M.G. Apers, A. Wombacher, Y. Wada, L.P.H. van Beek. From Script Towards Provenance Inference. <span class="venue">IEEE e-Science 2012, Chicago.</span> <a href="https://doi.org/10.1109/eScience.2012.6404467">DOI</a></li>
+      <li>M.R. Huq, P.M.G. Apers, A. Wombacher. Probabilistic Inference of Fine-grained Data Provenance. <span class="venue">DEXA 2012, LNCS vol. 7446, Springer.</span> <a href="https://doi.org/10.1007/978-3-642-32600-4_22">DOI</a></li>
+      <li>M.R. Huq, P.M.G. Apers, A. Wombacher. Fine-Grained Provenance Inference for a Large Processing Chain with Non-materialized Intermediate Views. <span class="venue">SSDBM 2012, LNCS vol. 7338, Springer.</span> <a href="https://doi.org/10.1007/978-3-642-31235-9_26">DOI</a></li>
+      <li>M.R. Huq, A. Wombacher, P.M.G. Apers. Inferring Fine-Grained Data Provenance in Stream Data Processing: Reduced Storage Cost, High Accuracy. <span class="venue">DEXA 2011, LNCS vol. 6861, Springer.</span> <a href="https://doi.org/10.1007/978-3-642-23091-2_11">DOI</a></li>
+      <li>A.A. Mamun, M.A. Abedin, M.A. Arman, M.A. Mottalib, M.R. Huq. Mining Data Stream from a Higher Level of Abstraction: A Class Window Approach. <span class="venue">CCIS vol. 254, Springer, 2011.</span> <a href="https://doi.org/10.1007/978-3-642-25483-3_38">DOI</a></li>
+      <li>M.R. Huq, A. Wombacher, P.M.G. Apers. Adaptive Inference of Fine-grained Data Provenance to Achieve High Accuracy at Lower Storage Costs. <span class="venue">IEEE e-Science 2011, Stockholm.</span> <a href="https://doi.org/10.1109/eScience.2011.36">DOI</a></li>
+      <li>M.R. Huq, A. Wombacher, P.M.G. Apers. Identifying the challenges for optimizing the process to achieve reproducible results in e-science applications. <span class="venue">PIKM 2010, Toronto, ACM.</span> <a href="https://doi.org/10.1145/1871902.1871916">DOI</a></li>
+      <li>M.R. Huq, A. Wombacher, P.M.G. Apers. Facilitating fine grained data provenance using temporal data model. <span class="venue">DMSN 2010, Toronto, ACM.</span> <a href="https://doi.org/10.1145/1858158.1858163">DOI</a></li>
+      <li>M. Chemisto, M.R. Huq, M.A. Mottalib. An Improved 1-NN Time Series Classification Algorithm. <span class="venue">ICCIT'10, Cape Town, WASET.</span> <a href="https://doi.org/10.13140/RG.2.1.3009.1761">DOI</a></li>
+      <li>R. Rahman, A.A. Khan, T.K. Avi, M.R. Huq. File Sharing in Advanced Collaborating Environment: Node Registration &amp; Cache Optimization Techniques. <span class="venue">IEEE ICCIT 2008, Khulna.</span> <a href="https://doi.org/10.1109/ICCITECHN.2008.4803059">DOI</a></li>
+      <li>M.R. Huq, K.T.U. Islam, Y.K. Lee, B.S. Jeong, S.Y. Lee. Decision Engine for Data Adaptation Service in Advanced Collaborating Environment. <span class="venue">IEEE ICACT 2008, Gangwon-Do.</span> <a href="https://doi.org/10.1109/ICACT.2008.4494137">DOI</a></li>
+      <li>K.T.U. Islam, J. Sarkar, K. Hasan, M.R. Huq, A.V. Gavrilov, Y.K. Lee, S.Y. Lee. A Framework for Smart Object and Its Collaboration in Smart Environment. <span class="venue">IEEE ICACT 2008, Gangwon-Do.</span> <a href="https://doi.org/10.1109/ICACT.2008.4493888">DOI</a></li>
+      <li>M.R. Huq, K.T.U. Islam, Y.K. Lee, B.S. Jeong, S.Y. Lee. Towards Building File Sharing and Adaptation Service for Advanced Collaborating Environment. <span class="venue">IEEE ICOIN 2008, Gangwon-Do.</span> <a href="https://doi.org/10.1109/ICOIN.2008.4472769">DOI</a></li>
+      <li>M.R. Huq, M.A. Mottalib, A.A. Khan, R. Rahman, T.K. Avi. Enhanced File Sharing Service among Registered Nodes in Advanced Collaborating Environment for Efficient User Collaboration. <span class="venue">GCA 2008, Nevada, CSREA Press.</span></li>
+      <li>M.R. Huq, N.T.T. Tuyen, Y.K. Lee, B.S. Jeong, S.Y. Lee. Modeling an Ontology for Managing Contexts in Smart Meeting Space. <span class="venue">SWWS 2007, Nevada, CSREA Press.</span></li>
+      <li>M.R. Huq, Y.K. Lee. Ontology-based Information Management for Data and Task Migration in Collaborative Work. <span class="venue">27th KIPS Conference, Korea, 2007.</span></li>
+      <li>N.T.T. Tuyen, Y.K. Lee, M.R. Huq, B.S. Jeong, S.Y. Lee. A Data Model for EPC Information Services. <span class="venue">DEWS 2007, Tokyo.</span></li>
+      <li>M.R. Huq, A. Razzaque. RRAL Communication Protocol for RPCs in Distributed Computing System. <span class="venue">ICCIT 2003, Savar.</span></li>
+    </ol>
+  </details>
+
+  <h3>Book and technical reports</h3>
+  <ul class="small">
+    <li>M.R. Huq. <em>An Inference-based Framework for Managing Data Provenance.</em> University of Twente, 2013. <a href="https://doi.org/10.3990/1.9789036501781">DOI</a></li>
+    <li>M.R. Huq, A. Wombacher, A. Mileo. Data Provenance Inference in Logic Programming: Reducing Effort of Instance-driven Debugging. Technical Report TR-CTIT-13-11, University of Twente, 2013. <a href="http://eprints.eemcs.utwente.nl/23336/">Link</a></li>
+    <li>A. Wombacher, M.R. Huq. Towards Automatic Capturing of Manual Data Processing Provenance. Technical Report TR-CTIT-11-12, University of Twente, 2011. <a href="http://eprints.eemcs.utwente.nl/20164/">Link</a></li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Funded and submitted projects</h2>
+  <ul>
+    <li><strong>From Tears to Care:</strong> Developing a Dialect-Aware AI Platform for Early Detection of Postpartum Depression in Bangladeshi Mothers. Co-researcher; submitted to EWUCRT, second-round review completed.</li>
+    <li><strong>PixieGPT:</strong> An intelligent and domain-adaptive query-handling system. Co-researcher; submitted to EWUCRT, second-round review ongoing.</li>
+    <li><strong>AI-Based GI Textile Innovation Lab</strong> for Digital Preservation, Authentication, and Research Capacity Building. Sub-Project Manager; submitted to UGC under the HEAT project.</li>
+  </ul>
+</section>
+
+<section id="service">
+  <h2>Academic and professional service</h2>
+
+  <h3>Accreditation and university committees</h3>
+  <ul class="small">
+    <li>Evaluation Team Member, BAETE (2023 – present)</li>
+    <li>Assistant Director (Administration), EDC-SICIP, EWU (2018 – present)</li>
+    <li>Member, CQI Committee, Dept. of CSE, EWU (2021 – present)</li>
+    <li>Member, Data Center Implementation Committee, EWU (2025 – present)</li>
+    <li>Member, ICS Need Assessment Committee, EWU (2024 – present)</li>
+    <li>Member, Campus-wide Wifi Implementation Committee, EWU (2023 – 2024)</li>
+    <li>Technical Expert, Convocation Technical Committee (2021) and Online Orientation Technical Committee (2020 – 2021)</li>
+    <li>Convener, University Website Advisory Committee (2018)</li>
+    <li>Member, Online Advising Software Development Advisory Committee (2018)</li>
+    <li>Member, Admission Test Committee (2016 – 2022)</li>
+    <li>Member, Convocation Organizing Committee (2016 – 2017)</li>
+    <li>Moderator, EWU Computer Programming Club (2016 – 2017)</li>
+  </ul>
+
+  <h3>Conference program committees</h3>
+  <ul class="small">
+    <li>DBKDA 2026, Valencia, Spain</li>
+    <li>DBKDA 2025, Lisbon, Portugal</li>
+    <li>ICACIA 2025, Delhi, India</li>
+    <li>ICASERT 2019, Dhaka, Bangladesh</li>
+  </ul>
+
+  <h3>Workshops and talks</h3>
+  <ul class="small">
+    <li>Resource Person, Workshop on Outcome-Based Education (OBE) Curriculum, Dept. of CSE, EWU (2025)</li>
+    <li>Resource Person, Seminar on Student Expectations and Experiences in Higher Education, IQAC, EWU (2021)</li>
+    <li>Resource Person, Advanced Training on Online Teaching-Learning-Assessment, EWUCRT (2020)</li>
+    <li>Resource Person, Workshop on Online Platforms, EWUCRT (2020)</li>
+  </ul>
+
+  <h3>Reviewer</h3>
+  <ul class="small">
+    <li>ACM Computing Surveys</li>
+    <li>Array (Elsevier)</li>
+    <li>International Journal of Information Systems and Change Management (Inderscience)</li>
+  </ul>
+</section>
+
+<section id="awards">
+  <h2>Scholarships and awards</h2>
+  <ul>
+    <li>Korean Government IT Scholarship (ITSP) and Kyung Hee University President Scholarship, 2006 – 2008</li>
+    <li>University of Twente Doctoral Fellowship, 2009 – 2013</li>
+    <li>IUT full-free studentship, 2001 – 2004</li>
+    <li>Bangladesh Government merit scholarships for outstanding SSC and HSC results, 1998 – 2004</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap"><span>&copy; <span id="y">2026</span> Mohammad Rezwanul Huq</span><a href="#">Back to top</a></div>
+</footer>
+
+<script>
+(function () {
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Highlight the current section in the nav
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav a'));
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (a) { a.classList.remove('active'); });
+          if (map[e.target.id]) map[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(function (s) { io.observe(s); });
+  }
+
+  // Publication search
+  var box = document.getElementById('pubsearch');
+  var note = document.getElementById('pubnote');
+  var items = Array.prototype.slice.call(document.querySelectorAll('ol.pubs li'));
+  var more = document.querySelector('#publications details');
+  box.addEventListener('input', function () {
+    var q = box.value.trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function (li) {
+      var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+      li.hidden = !hit;
+      if (hit) shown++;
+    });
+    if (q && more) more.open = true;
+    note.textContent = q ? shown + ' of ' + items.length + ' match' : '';
+  });
+})();
+</script>
+</body>
+</html>
